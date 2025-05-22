@@ -220,20 +220,20 @@
     can be found.
   -->
   <ItemGroup>
-    <Compile Include="Forms\ConfigureForm.cs">
+    <Compile Include="UI\ConfigureForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ConfigureForm.Designer.cs">
+    <Compile Include="UI\ConfigureForm.Designer.cs">
       <DependentUpon>ConfigureForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\DistroListForm.cs">
+    <Compile Include="UI\DistroListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\DistroListForm.Designer.cs">
+    <Compile Include="UI\DistroListForm.Designer.cs">
       <DependentUpon>DistroListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DistroListRibbon.cs" />
-    <Compile Include="DistroListService.cs" />
+    <Compile Include="UI\DistroListRibbon.cs" />
+    <Compile Include="Services\DistroListService.cs" />
     <Compile Include="Interfaces\IDistroRepo.cs" />
     <Compile Include="Models\Config.cs" />
     <Compile Include="Models\DistroConfig.cs" />
@@ -247,10 +247,10 @@
     <Compile Include="Utils\LocalFileClient.cs" />
     <Compile Include="Utils\OnlineFileClient.cs" />
     <Compile Include="Utils\OnlineDistroUtil.cs" />
-    <EmbeddedResource Include="Forms\ConfigureForm.resx">
+    <EmbeddedResource Include="UI\ConfigureForm.resx">
       <DependentUpon>ConfigureForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\DistroListForm.resx">
+    <EmbeddedResource Include="UI\DistroListForm.resx">
       <DependentUpon>DistroListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
