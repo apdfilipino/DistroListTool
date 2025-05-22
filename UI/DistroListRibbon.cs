@@ -45,7 +45,7 @@ namespace DistroListTool
         public string GetCustomUI(string ribbonID)
         {
             return ribbonID == "Microsoft.Outlook.Explorer"
-                    ? GetResourceText("DistroListTool.DistroListRibbon.xml")
+                    ? GetResourceText("DistroListTool.UI.DistroListRibbon.xml")
                     : "";
         }
 
