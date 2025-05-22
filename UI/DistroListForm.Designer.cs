@@ -53,6 +53,7 @@
             this.distroListComboBox.Size = new System.Drawing.Size(367, 21);
             this.distroListComboBox.TabIndex = 1;
             this.distroListComboBox.SelectedIndexChanged += new System.EventHandler(this.distroListComboBox_SelectedIndexChanged);
+            this.distroListComboBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.On_KeyUp);
             // 
             // label2
             // 
@@ -71,6 +72,7 @@
             this.templatesComboBox.Name = "templatesComboBox";
             this.templatesComboBox.Size = new System.Drawing.Size(367, 21);
             this.templatesComboBox.TabIndex = 3;
+            this.templatesComboBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.On_KeyUp);
             // 
             // openButton
             // 
@@ -81,6 +83,7 @@
             this.openButton.Text = "Open";
             this.openButton.UseVisualStyleBackColor = true;
             this.openButton.Click += new System.EventHandler(this.openButton_Click);
+            this.openButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.On_KeyUp);
             // 
             // DistroListForm
             // 
@@ -95,6 +98,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "DistroListForm";
             this.Text = "DL Tool";
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.On_KeyUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 

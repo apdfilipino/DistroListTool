@@ -49,6 +49,7 @@
             this.configureTextBox.Name = "configureTextBox";
             this.configureTextBox.Size = new System.Drawing.Size(243, 20);
             this.configureTextBox.TabIndex = 1;
+            this.configureTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.On_KeyUp);
             // 
             // isLocalCheckBox
             // 
@@ -70,6 +71,7 @@
             this.configureButton.Text = "Configure";
             this.configureButton.UseVisualStyleBackColor = true;
             this.configureButton.Click += new System.EventHandler(this.button1_Click);
+            this.configureButton.KeyUp += new System.Windows.Forms.KeyEventHandler(this.On_KeyUp);
             // 
             // ConfigureForm
             // 
@@ -83,6 +85,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ConfigureForm";
             this.Text = "DL Tool - Configuration";
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.On_KeyUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 

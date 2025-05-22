@@ -38,5 +38,13 @@ namespace DistroListTool
             SelectedTemplate = _distroLists[distroIndex].Distros[templateIndex];
             this.Close();
         }
+
+        private void On_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                openButton_Click(sender, e);
+            }
+        }
     }
 }

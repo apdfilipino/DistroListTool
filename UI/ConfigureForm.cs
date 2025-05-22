@@ -45,5 +45,13 @@ namespace DistroListTool
                 this.Close();
             }
         }
+
+        private void On_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button1_Click(sender, e);
+            }
+        }
     }
 }

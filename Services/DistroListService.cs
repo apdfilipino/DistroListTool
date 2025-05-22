@@ -95,8 +95,10 @@ namespace DistroListTool
         {
             CreateMailItem(
                 subject: distro.Subject,
-                to: distro.Recepients,
+                to: distro.ToRecepients,
                 body: distro.Body,
+                cc: distro.CcRecepients,
+                bcc: distro.BccRecepients,
                 format: distro.HtmlFormat ? OlBodyFormat.olFormatHTML : OlBodyFormat.olFormatPlain
                 );
         }
@@ -116,6 +118,8 @@ namespace DistroListTool
             string subject,
             string to,
             string body,
+            string cc,
+            string bcc,
             OlBodyFormat format = OlBodyFormat.olFormatHTML
             )
         {
@@ -124,6 +128,9 @@ namespace DistroListTool
             mailItem.BodyFormat = format;
             mailItem.Subject = subject;
             mailItem.To = to;
+            mailItem.CC = cc;
+            mailItem.BCC = bcc;
+
             if (format == OlBodyFormat.olFormatHTML)
             {
                 mailItem.HTMLBody = body;
