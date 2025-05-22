@@ -220,16 +220,16 @@
     can be found.
   -->
   <ItemGroup>
-    <Compile Include="ConfigureForm.cs">
+    <Compile Include="Forms\ConfigureForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConfigureForm.Designer.cs">
+    <Compile Include="Forms\ConfigureForm.Designer.cs">
       <DependentUpon>ConfigureForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DistroListForm.cs">
+    <Compile Include="Forms\DistroListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DistroListForm.Designer.cs">
+    <Compile Include="Forms\DistroListForm.Designer.cs">
       <DependentUpon>DistroListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DistroListRibbon.cs" />
@@ -247,10 +247,10 @@
     <Compile Include="Utils\LocalFileClient.cs" />
     <Compile Include="Utils\OnlineFileClient.cs" />
     <Compile Include="Utils\OnlineDistroUtil.cs" />
-    <EmbeddedResource Include="ConfigureForm.resx">
+    <EmbeddedResource Include="Forms\ConfigureForm.resx">
       <DependentUpon>ConfigureForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DistroListForm.resx">
+    <EmbeddedResource Include="Forms\DistroListForm.resx">
       <DependentUpon>DistroListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
