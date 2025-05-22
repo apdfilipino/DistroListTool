@@ -285,7 +285,7 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DistroListRibbon.xml" />
+    <EmbeddedResource Include="UI\DistroListRibbon.xml" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
