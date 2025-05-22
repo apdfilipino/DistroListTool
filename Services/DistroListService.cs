@@ -111,7 +111,14 @@ namespace DistroListTool
 
             var task = repo.GetDistroListsAsync(Config.Path);
             task.Wait();
-            _distroConfig = task.Result;
+            if (task.Result == null)
+            {
+                ResetConfig();
+            }
+            else
+            {
+                _distroConfig = task.Result;
+            }
         }
 
         public void CreateMailItem(
@@ -159,8 +166,15 @@ namespace DistroListTool
                 Config = config;
             }
             catch
-            { }
+            {
+                ResetConfig();
+            }
         }
 
+        private void ResetConfig()
+        {
+            Config = null;
+            _distroConfig = null;
+        }
     }
 }

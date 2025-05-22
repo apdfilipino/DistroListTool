@@ -8,8 +8,15 @@ namespace DistroListTool.Utils
     {
         public Task<DistroConfig> GetDistroListsAsync(string path)
         {
-            var serialized = LoadFile<DistroConfig>(path);
-            return Task.FromResult(serialized);
+            try
+            {
+                var serialized = LoadFile<DistroConfig>(path);
+                return Task.FromResult(serialized);
+            }
+            catch
+            {
+                return null;
+            }
         }
     }
 }

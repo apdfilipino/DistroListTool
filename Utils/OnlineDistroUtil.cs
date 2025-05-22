@@ -10,11 +10,18 @@ namespace DistroListTool.Utils
     {
         public async Task<DistroConfig> GetDistroListsAsync(string path)
         {
-            var response = await _client.GetAsync(path).ConfigureAwait(false);
+            try
+            {
+                var response = await _client.GetAsync(path).ConfigureAwait(false);
 
-            var content = await response.Content.ReadAsStringAsync();
-            var config = JsonSerializer.Deserialize<DistroConfig>(content);
-            return config;
+                var content = await response.Content.ReadAsStringAsync();
+                var config = JsonSerializer.Deserialize<DistroConfig>(content);
+                return config;
+            }
+            catch
+            {
+                return null;
+            }
         }
     }
 }
