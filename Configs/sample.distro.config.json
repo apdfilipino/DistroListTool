@@ -1,0 +1,52 @@
+{
+    "version": "v1.0.0",
+    "distroList": [
+        {
+            "name": "Distro List Name",
+            "distros": [
+                {
+                    "name": "HTML Template 1",
+                    "to": [
+                        "to@email.com",
+                        "to.2@gmail.com"
+                    ],
+                    "cc": [
+                        "to.3@gmail.com"
+                    ],
+                    "bcc": [
+                        "to.4@gmail.com"
+                    ],
+                    "subject": "Sample HTML Template",
+                    "body": "<html><body><h1>Sample</h1><h3>HTML Template</h3></body></html>",
+                    "htmlFormat": true
+                },
+                {
+                    "name": "Non-html Template",
+                    "to": [
+                        "to@email.com"
+                    ],
+                    "subject": "Non-HTML Template",
+                    "body": "Non-HTML\r\nTemplate",
+                    "htmlFormat": false
+                }
+            ]
+        },
+        {
+            "name": "Distro List Name 2",
+            "distros": [
+                {
+                    "name": "HTML Template 2",
+                    "cc": [
+                        "to.3@gmail.com"
+                    ],
+                    "bcc": [
+                        "to.4@gmail.com"
+                    ],
+                    "subject": "Sample HTML Template",
+                    "body": "<html><body><h1>Sample</h1><h3>HTML Template 2</h3></body></html>",
+                    "htmlFormat": true
+                }
+            ]
+        }
+    ]
+}
