@@ -263,7 +263,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="app.config" />
-    <None Include="Configs\sample.distro.config.json" />
+    <None Include="Samples\sample.distro.config.json" />
     <None Include="DistroListTool_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
